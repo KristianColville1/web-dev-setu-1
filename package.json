@@ -1,0 +1,12 @@
+{
+    "name": "web-sev-setu-1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Kristian Colville - KristianColville1",
+    "license": "ISC"
+}

@@ -1,9 +1,8 @@
 # web-dev-setu-1
 
+css box shadow:
+https://getcssscan.com/css-box-shadow-examples
 
+fix menu collapse: https://stackoverflow.com/questions/48143381/css-expand-contract-animation-to-show-hide-content
 
-meta tags
-
-https://www.ionos.com/digitalguide/websites/web-development/the-most-important-meta-tags-and-their-functions/
-
-https://stackoverflow.com/questions/1092329/what-are-the-important-meta-tags-i-must-put-in-my-website
+https://www.w3schools.com/howto/howto_js_collapsible.asp

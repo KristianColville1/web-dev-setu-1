@@ -47,6 +47,53 @@ a {
 aside {
     width: 100%;
 }
+
+/* margin only */
+
+.m-2 {
+    margin: 1rem;
+}
+
+.mx-2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+
+/* padding only */
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* text only */
+.text-center {
+    text-align: center;
+}
+
+/* display only */
+.d-flex {
+    display: flex;
+}
+
+/* background only */
+.bg-grey {
+    background-color: var(--black-6);
+}
+
+/* position only */
+.position-relative {
+    position: relative;
+}
 @media screen and (min-width: 768px) {
     .d-none-md {
         display: none;

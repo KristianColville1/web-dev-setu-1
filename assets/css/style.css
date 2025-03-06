@@ -19,6 +19,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Global Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 li {
     list-style: none;
 }
@@ -26,8 +34,6 @@ li {
 a {
     text-decoration: none;
 }
-
-/* Global Styles */
 
 .container {
     width: 100%;
@@ -50,6 +56,12 @@ a {
     align-items: center;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
 @media screen and (min-width: 768px) {
     .d-none-md {
         display: none;

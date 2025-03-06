@@ -7,11 +7,11 @@ Searched from: https://freefrontend.com/css-hamburger-menu-icons/
 sized to 60% of the original size. adapted for menu.
 */
 .menu-toggler-icon {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    width: 42px;
     margin: 5px;
-    cursor: pointer;
+    width: 42px;
 }
 
 #menu-toggler {

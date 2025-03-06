@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --moonstone: #709faaff;
-    --aquamarine: #b5fed9;
-    --tiffany-blue: #93cfc2ff;
-    --feldgrau: #3b5249ff;
-    --gunmetal: #1c2826ff;
-    --white: #ffffff;
-    --black: #000000;
+    --black-1: #111; /* copied from sky news */
+    --black-2: #333;
+    --black-3: #555;
+    --black-4: #777;
+    --black-5: #999;
+    --black-6: #252525; /* copied from sky news */
+    --blue: #2aa2e1; /* copied from sky news */
+
+/* CSS HEX https: //coolors.co/111111-44af69-f8333c-fffd82-f26df9 */
+    --night: #111111ff;
+    --jade: #44af69ff;
+    --imperial-red: #f8333cff;
+    --icterine: #fffd82ff;
+    --ultra-pink: #f26df9ff;
 }
 
 /* Reset CSS */
@@ -25,6 +32,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: var(--black-1);
+    color: #fff;
 }
 
 li {
@@ -35,31 +44,7 @@ a {
     text-decoration: none;
 }
 
-.container {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.container.fluid {
-    max-width: 100%;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+aside {
     width: 100%;
 }
 @media screen and (min-width: 768px) {

@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/container.css">
+    <link rel="stylesheet" href="/assets/css/container-system.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/menu-toggler.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="stylesheet" href="/assets/css/news.css">
-    <title></title>
+
+    <!-- https://favicon.io/favicon-generator/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" sizes="192x192" href="/assets/images/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>The Daily Satire</title>
 </head>
 <body>
     <div>
     <header class="container fluid">
     <nav class="container">
-        <img src="/assets/images/logo-light.svg" width="200px" height="auto"/>
+        <img src="/assets/images/logo-dark.svg" width="200px" height="auto" id="brand-logo"/>
         <input type="checkbox" id="menu-toggler" />
         <label for="menu-toggler" class="d-none-md menu-toggler-icon">
             <span></span>
@@ -25,6 +32,7 @@
         </label>
         <div class="nav-wrapper">
             <ul class="nav-list">
+                <li class="nav-item"><a href="#">Home</a></li>
                 <li class="nav-item"><a href="#">About</a></li>
                 <li class="nav-item"><a href="#">Contact</a></li>
                 <li class="nav-item"><a href="#">Blog</a></li>
@@ -36,17 +44,12 @@
     </nav>
 </header>
     <div class="container">
-    <div class="breaking-news-banner">
-    <div class="breaking-news-content">
-        <p>BREAKING NEWS:</p>
-        <p>DVolodymyr Zelenskyy sparks out Donald Trump... |</p>
-        <p>Keir Starmer grooms a gang of puppies... |</p>
-        <p>Germany opts in for Russian energy dependence... |</p>
-        <p>Andrew tate got no place to go... |</p>
+    <div class="row main-content">
+        <div class="col-sm-12 col-md-8 col-lg-9">Main Content</div>
+        <aside class="col-sm-12 col-md-4 col-lg-3">
+    Test
+</aside>
     </div>
-</div>
-    <div class="row landing-section"><p>test</p></div>
-    <div class="row">testing another</div>
 </div>
 
 </div>

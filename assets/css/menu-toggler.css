@@ -19,7 +19,7 @@ sized to 60% of the original size. adapted for menu.
 }
 
 .menu-toggler-icon span {
-    background: var(--black);
+    background: #fff;
     border-radius: 6px;
     height: 4px;
     margin: 4px 0;

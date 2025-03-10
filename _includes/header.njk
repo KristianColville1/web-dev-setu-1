@@ -1,6 +1,6 @@
 <header class="container fluid">
     <nav class="container">
-        <img src="/assets/images/logo-dark.svg" width="200px" height="auto" id="brand-logo"/>
+        {% include "parts/brand.njk" %}
         <input type="checkbox" id="menu-toggler" />
         <label for="menu-toggler" class="d-none-md menu-toggler-icon">
             <span></span>
@@ -9,13 +9,7 @@
         </label>
         <div class="nav-wrapper">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
-                <li class="nav-item"><a href="#">Blog</a></li>
-                <li class="nav-item"><a href="#">Latest News</a></li>
-                <li class="nav-item"><a href="#">Shop</a></li>
-                <li class="nav-item d-none-md"><a href="#">Toggle</a></li>
+                {% include "parts/nav-items.njk" %}
             </ul>
         </div>
     </nav>

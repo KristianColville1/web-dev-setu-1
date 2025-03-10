@@ -4,24 +4,11 @@ layout: frame.njk
 <div class="container">
     <div class="row main-content">
         <h1 class="col-12 py-2 mt-5 mx-2">TOP STORIES</h1>
-        <div class="col-sm-12 col-md-8 col-lg-9">
-            <div class="row">
-                <div class="col-12 big-news-card m-2">
-                    <div class="row">
-                    <div class="img-cap col-sm-12 col-md-7 col-lg-8 position-relative">
-                        <img src="/assets/images/news/pexels-rdne-9086775.jpg" alt="News Image" width="100%" height="100%">
-                        <span class="news-badge">BREAKING<i class="arrow fa-solid fa-arrow-right"></i>
-                    </div>
-                    
-                    <div class="col-sm-12 col-md-5 col-lg-4">
-                        <p class="text-center mt-5">News content goes here.</p>
-                    </div>
-                    </div>
-
-
-                </div>
-            </div>
+        <div class="col-sm-12 col-md-8 col-lg-9 position-relative">
+            {% include "templates/big-news-card.njk" %}
         </div>
-        {% include "aside.njk" %}
+        <div class="col-sm-12 col-md-4 col-lg-3">
+            {% include "aside.njk" %}
+        </div>
     </div>
 </div>

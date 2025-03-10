@@ -26,19 +26,20 @@ nav {
     justify-content: flex-start;
 }
 
-nav ul li a {
+.nav-item a {
     color: white;
     font-weight: 300;
 }
 
 .nav-item {
+    color: white;
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: 500;
     padding: 0.25em 0.5em;
 }
 
-.nav-item:hover {
+nav .nav-item:hover {
     border-bottom: 3px solid var(--blue);
     transform: scale(1.1) !important;
     transition: transform 0.2s ease-in-out;

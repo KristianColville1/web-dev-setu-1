@@ -7,12 +7,17 @@ https: //getbootstrap.com/docs/4.0/layout/grid/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1024px;
+    max-width: 1140px;
     margin: 0 auto;
     width: 100%;
 }
 
-.container.fluid {
+.container-m-wrapped {
+    margin: 0.25rem;
+    width: 100%;
+}
+
+.fluid {
     max-width: 100%;
     /* full width */
 }
@@ -33,15 +38,28 @@ https: //getbootstrap.com/docs/4.0/layout/grid/
 
 .row {
     display: grid;
+    flex: 1 1 100%;
     gap: 0.5rem;
+    grid-template-rows: auto;;
     grid-template-columns: repeat(12, 1fr);
-    /* 12 columns */
-    width: 100%;
-    /* spacing between columns */
+    grid-area: auto;
 }
 
+.no-gap {
+    gap: 0;
+}
+
+/*---------------------------------------------------------Column Only */
 .col-12 {
     grid-column: span 12;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-4 {
+    grid-column: span 4;
 }
 
 /*
@@ -52,9 +70,22 @@ desktop width: 1024px
 */
 @media screen and (min-width: 300px) {
 
+    .d-flex-sm {
+        display: flex;
+    }
+
+    .justify-content-center-sm {
+        justify-content: center;
+    }
+
     /* Mobile */
     .col-sm-12 {
         grid-column: span 12;
+    }
+
+    .offset-sm-0 {
+        grid-column-start: 1;
+        grid-column-end: 13;
     }
 }
 
@@ -80,14 +111,34 @@ desktop width: 1024px
     .col-md-4 {
         grid-column: span 4;
     }
+
+    .offset-md-6 {
+        grid-column-start: 7;
+        grid-column-end: 13;
+    }
+
+    .offset-md-0 {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+
+    .col-lg-6 {
+        grid-column: span 6;
+    }
+
     .col-lg-3 {
         grid-column: span 3;
     }
 
     .col-lg-9 {
         grid-column: span 9;
+    }
+
+    .offset-lg-6 {
+        grid-column-start: 7;
+        grid-column-end: 13;
     }
 }

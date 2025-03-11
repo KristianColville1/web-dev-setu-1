@@ -59,6 +59,15 @@ aside {
     margin-right: 1rem;
 }
 
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
 .mt-5 {
     margin-top: 3rem;
 }
@@ -67,6 +76,13 @@ aside {
     margin-bottom: 1rem;
 }
 
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.ml-2 {
+    margin-left: 1rem;
+}
 /* ----------------------------------------------------------------------- padding only */
 .p-2 {
     padding: 1rem;
@@ -95,9 +111,17 @@ aside {
     padding-bottom: 3rem;
 }
 
+.pl-2 {
+    padding-left: 1rem;
+}
+
 /*  ----------------------------------------------------------------------- text only */
 .text-center {
     text-align: center;
+}
+
+.text-justify {
+    text-align: justify !important;
 }
 
 .text-white {
@@ -106,6 +130,10 @@ aside {
 
 .text-dark {
     color: var(--black-1);
+}
+
+.text-primary {
+    color: var(--ultra-pink);
 }
 
 /*  ----------------------------------------------------------------------- font only */
@@ -157,13 +185,25 @@ aside {
     transition: all 0.25s ease-in-out;
 }
 
-/* ----------------------------------------------------------------------- input only */
-input{
-    border: 0;
+/* ----------------------------------------------------------------------- Other CSS */
+
+.main-content {
+    min-height: 50vh;
 }
 
-input:after {
-    border: 0
+.article-img {
+    width: 100%;
+    height: 100%;
+}
+.title-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.heading-hr {
+    height: 0.1rem;
+    background-color: white;
+    max-width: 700px;
 }
 @media screen and (min-width: 768px) {
     .d-none-md {

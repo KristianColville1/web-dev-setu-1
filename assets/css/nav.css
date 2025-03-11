@@ -45,6 +45,11 @@ nav .nav-item:hover {
     transition: transform 0.2s ease-in-out;
 }
 
+nav .active {
+    border-bottom: 3px solid var(--blue);
+    transform: scale(1.1) !important;
+}
+
 @media screen and (max-width: 768px) {
     nav {
         align-items: center;

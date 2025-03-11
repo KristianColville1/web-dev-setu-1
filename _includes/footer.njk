@@ -1,40 +1,55 @@
 <footer class="container fluid  bg-grey">
     <div class="container">
         <div class="row py-5">
-            <div class="col-sm-12 col-md-6 col-lg-3 m-2">{% include "parts/brand.njk" %}</div>
+            <div class="col-sm-12 col-md-6 col-lg-3 offset-sm-6 offset-md-0 m-2 d-flex-sm justify-content-sm-center">{%
+                include "parts/brand.njk" %}</div>
             <div class="col-sm-12 col-md-6 col-lg-3 m-2">
                 <h4 class="text-white fw-bold mb-2">Navigation</h4>
+                <ul>
                 {% include "parts/nav-items.njk" %}
+                </ul>
+
+                <ul>
+                    <li class="nav-item"><a href="/terms-and-conditions">T&Cs</a></li>
+                    <li class="nav-item"><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
             </div>
 
-            <div class="row col-sm-12 col-md-6">
-                <div class="col-sm-12 col-md-6 m-2">
-                    <h4 class="text-white fw-bold mb-2">Contact</h4>
-                    <ul>
-                        <li class="nav-item w-100"><a href="tel:0504210754">+353504210754</a></li>
-                        <li class="nav-item w-100"><a href="mailto:support@thedailysatire.ie">Support@thedailysatire.ie</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-md-6 m-2">
-                    <h4 class="text-white fw-bold mb-2">Social</h4>
-                    <ul class="row">
-                        <li class="nav-item"><a href="https://tiktok.com" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok fs-3"></i></a></li>
-                        <li class="nav-item"><a href="https://meta.com"  target="_blank" rel="noopener"><i class="fa-brands fa-meta fs-3"></i></a></li>
-                        <li class="nav-item"><a href="https://linkedin.com" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin fs-3"></i></a></li>
-                        <li class="nav-item"><a href="https://snapchat.com" target="_blank" rel="noopener"><i class="fa-brands fa-snapchat fs-3"></i></a></li>
-                        <li class="nav-item"><a href="https://vimeo.com" target="_blank" rel="noopener"><i class="fa-brands fa-vimeo fs-3"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 m-2">
-                    <h4 class="text-white fw-bold mb-2">Weekly Newsletter</h4>
-                        <form class="d-flex">
-                            <input type="text" class="w-100 text-center py-2" placeholder="Enter Your Email Address">
-                            <button class="btn btn-primary">Subscribe</button>
-                        </form>
+            <div class="col-sm-12 col-md-6 m-2">
+                <div class="row">
+                    <div class="col-sm-12 mb-5">
+                        <h4 class="text-white fw-bold mb-2">Weekly Newsletter</h4>
+                        <div class="row no-gap subscribe-form">
+                            <input type="text" class="col-8 text-center py-2" placeholder="Enter Your Email Address">
+                            <button class="col-4 btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 mt-2">
+                        <h4 class="text-white fw-bold mb-2">Contact</h4>
+                        <ul>
+                            <li class="nav-item w-100"><a href="tel:0504210754">+353504210754</a></li>
+                            <li class="nav-item w-100"><a
+                                    href="mailto:support@thedailysatire.ie">Support@thedailysatire.ie</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 mt-2">
+                        <h4 class="text-white fw-bold mb-2">Social</h4>
+                        <ul class="d-flex justify-content-center">
+                            <li class="nav-item"><a aria-label="link to Tiktok" href="https://tiktok.com" target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-tiktok fs-3"></i></a></li>
+                            <li class="nav-item"><a aria-label="link to Meta"  href="https://meta.com" target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-meta fs-3"></i></a></li>
+                            <li class="nav-item"><a aria-label="link to Linkedin"  href="https://linkedin.com" target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-linkedin fs-3"></i></a></li>
+                            <li class="nav-item"><a aria-label="link to Snapchat"  href="https://snapchat.com" target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-snapchat fs-3"></i></a></li>
+                            <li class="nav-item"><a aria-label="link to Vimeo"  href="https://vimeo.com" target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-vimeo fs-3"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
         </div>
         <div class="row pb-5">
             <div class="col-12">

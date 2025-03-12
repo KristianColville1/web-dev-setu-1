@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --black-1: #111;/* copied from sky news */
+    --black-2: #333;
+    --black-3: #555;
+    --black-4: #777;
+    --black-5: #999;
+    --black-6: #252525;/* copied from sky news */
+    --blue: #2aa2e1;/* copied from sky news */
+
+    /* ----------------------------------------------------------------------- CSS HEX https: //coolors.co/111111-44af69-f8333c-fffd82-f26df9 */
+    --night: #111111ff;
+    --jade: #44af69ff;
+    --imperial-red: #f8333cff;
+    --icterine: #fffd82ff;
+    --ultra-pink: #f26df9ff;
+}
+
+/*  ----------------------------------------------------------------------- Reset CSS */
+* {
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*  ----------------------------------------------------------------------- Global Styles */
+body {
+    background-color: var(--black-1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+aside {
+    width: 100%;
+}
+
+/* ----------------------------------------------------------------------- margin only */
+
+.m-2 {
+    margin: 1rem;
+}
+
+.mx-2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.ml-2 {
+    margin-left: 1rem;
+}
+/* ----------------------------------------------------------------------- padding only */
+.p-2 {
+    padding: 1rem;
+}
+
+.py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.px-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.pb-5 {
+    padding-bottom: 3rem;
+}
+
+.pl-2 {
+    padding-left: 1rem;
+}
+
+/*  ----------------------------------------------------------------------- text only */
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-dark {
+    color: var(--black-1);
+}
+
+.text-primary {
+    color: var(--ultra-pink);
+}
+
+/*  ----------------------------------------------------------------------- font only */
+.fw-bold {
+    font-weight: 700;
+}
+
+.fs-3 {
+    font-size: 1.5rem;
+}
+
+/* ----------------------------------------------------------------------- background only */
+.bg-grey {
+    background-color: var(--black-6);
+}
+
+/* ----------------------------------------------------------------------- position only */
+.position-relative {
+    position: relative;
+}
+
+/* ----------------------------------------------------------------------- border only */
+.rounded {
+    border-radius: 0.5rem;
+}
+
+/* ----------------------------------------------------------------------- width only */
+.w-100 {
+    width: 100%;
+}
+
+/* ----------------------------------------------------------------------- button only */
+.btn {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0;
+}
+
+.btn-primary {
+    background-color: var(--ultra-pink);
+    padding: 0.25rem 0.5rem;
+        transition: all 0.25s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--black-3);
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+
+/* ----------------------------------------------------------------------- Other CSS */
+
+.main-content {
+    min-height: 50vh;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+}
+.title-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.heading-hr {
+    height: 0.1rem;
+    background-color: white;
+    max-width: 700px;
+}
+@media screen and (min-width: 768px) {
+    .d-none-md {
+        display: none;
+    }
+}

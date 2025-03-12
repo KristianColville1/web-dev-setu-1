@@ -1,12 +1,13 @@
 <footer class="container fluid  bg-grey">
     <div class="container">
         <div class="row py-5">
-            <div class="col-sm-12 col-md-6 col-lg-3 offset-sm-6 offset-md-0 m-2 d-flex-sm justify-content-sm-center">{%
-                include "parts/brand.njk" %}</div>
+            <div class="col-sm-12 col-md-6 col-lg-3 offset-sm-6 offset-md-0 m-2 d-flex-sm justify-content-sm-center">
+                {%include "components/brand.njk" %}
+            </div>
             <div class="col-sm-12 col-md-6 col-lg-3 m-2">
                 <h4 class="text-white fw-bold mb-2">Navigation</h4>
                 <ul>
-                {% include "parts/nav-items.njk" %}
+                {% include "components/nav-items.njk" %}
                 </ul>
 
                 <ul>

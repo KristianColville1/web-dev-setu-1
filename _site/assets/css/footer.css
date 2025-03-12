@@ -1,0 +1,17 @@
+footer {
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    font-weight: 300;
+}
+
+footer a:hover {
+    color: var(--icterine);
+    transition: all 0.25s ease-in-out;
+}
+
+.subscribe-form {
+    width: 100%;
+}

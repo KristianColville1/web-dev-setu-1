@@ -1,14 +1,14 @@
 ---
-layout: frame.njk
+layout: layouts/frame.njk
 ---
 <main>
 <h1 class="title-text my-5">TOP STORIES</h1>
 <div class="row main-content">
     <div class="col-sm-12 col-md-8 col-lg-9 position-relative">
-        {% include "templates/big-news-card.njk" %}
+        {% include "components/big-news-card.njk" %}
     </div>
     <div class="col-sm-12 col-md-4 col-lg-3">
-        {% include "aside.njk" %}
+        {% include "templates/aside.njk" %}
     </div>
 </div>
 </main>

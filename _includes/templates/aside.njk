@@ -1,3 +1,13 @@
-<aside>
-    Test
+{% set articles = [
+{"title": "test","description": "Test","date": "2025","url": "test" },
+{"title": "test 2", "description": "Another test", "date": "2026", "url": "test2"},
+{"title": "test", "description": "Test", "date": "2025", "url": "test" }
+] %}
+
+<aside class="m-2">
+    {% import "templates/article.njk" as articleTemplate %}
+    {% for article in articles %}
+    {{ articleTemplate.field(article.title, article.description, article.date, article.url)
+    }}
+    {% endfor %}
 </aside>

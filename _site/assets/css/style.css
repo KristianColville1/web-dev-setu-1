@@ -111,6 +111,9 @@ aside {
     padding-bottom: 3rem;
 }
 
+.pb-4 {
+    padding-bottom: 2.5rem;
+}
 .pl-2 {
     padding-left: 1rem;
 }
@@ -122,6 +125,10 @@ aside {
 
 .text-justify {
     text-align: justify !important;
+}
+
+.text-decoration-hover:hover {
+    text-decoration: underline;
 }
 
 .text-white {
@@ -157,7 +164,7 @@ aside {
 
 /* ----------------------------------------------------------------------- border only */
 .rounded {
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
 }
 
 /* ----------------------------------------------------------------------- width only */

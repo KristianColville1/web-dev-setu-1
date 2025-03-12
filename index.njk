@@ -1,14 +1,36 @@
 ---
 layout: layouts/frame.njk
 ---
+
+{% set articles = [
+{"title": "test", "description": "Test", "date": "2025", "url": "test", "class":"col-sm-12 col-md-4" },
+{"title": "test 2", "description": "Another test", "date": "2026", "url": "test2", "class":"col-sm-12 col-md-4"
+},{"title": "test", "description": "Test", "date": "2025", "url": "test", "class":"col-sm-12 col-md-4" },
+{"title": "test 2", "description": "Another test", "date": "2026", "url": "test2", "class":"col-sm-12 col-md-4"
+},{"title": "test", "description": "Test", "date": "2025", "url": "test", "class":"col-sm-12 col-md-4" },
+{"title": "test 2", "description": "Another test", "date": "2026", "url": "test2", "class":"col-sm-12 col-md-4"
+},{"title": "test", "description": "Test", "date": "2025", "url": "test", "class":"col-sm-12 col-md-4" },
+{"title": "test 2", "description": "Another test", "date": "2026", "url": "test2", "class":"col-sm-12 col-md-4"
+}
+] %}
+
 <main>
-<h1 class="title-text my-5">TOP STORIES</h1>
-<div class="row main-content">
-    <div class="col-sm-12 col-md-8 col-lg-9 position-relative">
-        {% include "components/big-news-card.njk" %}
+    <h1 class="title-text my-5">TOP STORIES</h1>
+    <div class="row main-content">
+        <div class="col-sm-12 col-md-8 col-lg-9 position-relative">
+            {% include "components/big-news-card.njk" %}
+
+            <section class="row m-2">
+                {% import "templates/article.njk" as articleTemplate %}
+                {% for article in articles %}
+                {{ articleTemplate.field(article.title, article.description, article.date, article.url, article.class)
+                }}
+                {% endfor %}
+            </section>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3">
+            {% include "templates/aside.njk" %}
+        </div>
     </div>
-    <div class="col-sm-12 col-md-4 col-lg-3">
-        {% include "templates/aside.njk" %}
-    </div>
-</div>
 </main>

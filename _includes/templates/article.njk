@@ -1,7 +1,10 @@
-<article>
+{% macro field(url, title, description, date, class)%}
+<article class="{{class}}">
     <a href="{{url}}">
+        <img src="/assets/images/placeholder.webp" alt="Placeholder image" width="100%" class="rounded">
         <p>{{title}}</p>
         <p>{{description}}</p>
         <p>{{date}}</p>
     </a>
 </article>
+{% endmacro %}

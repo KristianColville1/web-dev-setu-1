@@ -83,4 +83,9 @@ nav .active {
         margin-top: 10px;
         transition: all .4s ease-in-out;
     }
+
+    nav .active {
+        border: 0;
+        background-color: var(--black-4);
+    }
 }

@@ -7,7 +7,7 @@ https: //getbootstrap.com/docs/4.0/layout/grid/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1140px;
+    max-width: 1024px;
     margin: 0 auto;
     width: 100%;
 }
@@ -49,6 +49,9 @@ https: //getbootstrap.com/docs/4.0/layout/grid/
     gap: 0;
 }
 
+.gap-2 {
+    gap: 1rem;
+}
 /*---------------------------------------------------------Column Only */
 .col-12 {
     grid-column: span 12;
@@ -92,6 +95,9 @@ desktop width: 1024px
 @media screen and (min-width: 768px) {
 
     /* Tablet */
+    .col-md-9 {
+        grid-column: span 9;
+    }
     .col-md-8 {
         grid-column: span 8;
     }

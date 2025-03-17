@@ -1,0 +1,10 @@
+{% macro field(path) %}
+<nav class="">
+    <ol class="d-flex">
+        <li class="mx-2"><a href="/" class="text-white">Home</a></li>
+        {% for item in path %}
+         <li class="mx-2"><span class="mx-2">&gt;</span><a href="{{ item.url }}"  class="breadcrumb">{{ item.title }}</a></li>
+        {% endfor %}
+    </ol>
+</nav>
+{% endmacro %}

@@ -2,12 +2,11 @@
 layout: layouts/layout.njk
 ---
 <div class="container fluid">
-    {% include "layouts/header.njk" %}
-    <div class="container">
+    {% include "templates/header.njk" %}
+
         <div class="container-m-wrapped">
 
             {{ content | safe }}
         </div>
-    </div>
 
 </div>

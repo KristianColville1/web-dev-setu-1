@@ -1,0 +1,54 @@
+---
+layout: layouts/frame.njk
+---
+
+<main class="container">
+    <div>
+    <h1 class="title-text my-5">Contact Us</h1>
+    <h2>How can we help?</h2>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-sm-12 col-md-6 my-1">
+            <div class="row">
+                <div class="col-12">
+                    <p>Please contact us using the details below or fill out our
+                        general query contact form.</p>
+                </div>
+                <div class="col-12 my-5">
+                    <h3>Contact Information</h3>
+                    {% include "components/contact-info.njk" %}
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-wrapper mx-2 p-2 rounded bg-white text-dark">
+                <h3 class="my-2">General Query</h3>
+                <form class="row">
+                    <div class="col-sm-12 col-md-6 form-group">
+                        <label for="firstName" class="d-none">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="Enter First Name">
+                    </div>
+                    <div class="col-sm-12 col-md-6 form-group">
+                        <label for="lastName" class="d-none">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Enter Last Name">
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <label for="email" class="d-none">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter Email">
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <label for="message" class="d-none">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" required
+                            placeholder="Enter Message"></textarea>
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <button type="submit" class="btn btn-primary float-end rounded">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</main>

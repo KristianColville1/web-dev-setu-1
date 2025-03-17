@@ -1,0 +1,52 @@
+---
+layout: layouts/frame.njk
+---
+
+{% set articles = [
+{
+"title": "Putin says he has no money left and needs sanctions lifted to keep invading",
+"date": "2025",
+"url": "/latest-news/putin-says-he-has-no-money-left-and-needs-sanctions-lifted",
+"imgSrc":"/assets/images/news/putin-2.webp"
+},
+{
+"title": "UK Prime minister knows why Putin Invaded Ukraine",
+"date": "2026",
+"url": "/latest-news/uk-prime-minister-knows-why-putin-invaded-ukraine",
+"imgSrc":"/assets/images/news/uk-prime-minister.webp"
+},{
+"title": "Putin says UK should mind it's own business",
+"date": "2025",
+"url": "/latest-news/putin-says-uk-should-mind-its-own-business",
+"imgSrc":"/assets/images/news/Putin.jpg"
+},{
+"title": "Aliens demand justice for car crash victims",
+"date": "15 hours ago",
+"url": "/latest-news/aliens-demand-justice-for-car-crash-victims",
+"imgSrc":"/assets/images/news/aliens-in-car.jpg"
+},
+{
+"title": "How to save money and have fun as an adult",
+"date": "yesterday",
+"url": "/latest-news/how-to-save-money-and-have-fun-as-an-adult",
+"imgSrc":"/assets/images/news/adult-health-meme.jpg"
+},{
+"title": "Cheap Viagra Goes Terribly Wrong",
+"date": "55 minutes ago",
+"url": "latest-news/cheap-viagra-goes-terribly-wrong",
+"imgSrc":"/assets/images/news/cheap-viagra.jpg"
+}
+] %}
+
+<div class="container">
+<h1 class="title-text my-5">Latest News</h1>
+<main class="row my-5">
+
+    {% include "components/breadcrumb-path.njk" %}
+    {% import "templates/article.njk" as articleTemplate %}
+    {% for article in articles %}
+    {{ articleTemplate.field(article.title, article.description, article.date, article.url, article.imgSrc)
+    }}
+    {% endfor %}
+</main>
+</div>

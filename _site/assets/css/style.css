@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --black-1: #111;/* copied from sky news */
+    --black-1: #111;
+    /* single copied from sky news */
     --black-2: #333;
     --black-3: #555;
     --black-4: #777;
     --black-5: #999;
-    --black-6: #252525;/* copied from sky news */
-    --blue: #2aa2e1;/* copied from sky news */
+    --black-6: #252525;
+    --blue: #2aa2e1;
+    /* single copied from sky news */
+    --blue-dark: #1d7dbf;
 
     /* ----------------------------------------------------------------------- CSS HEX https: //coolors.co/111111-44af69-f8333c-fffd82-f26df9 */
     --night: #111111ff;
@@ -15,6 +18,7 @@
     --imperial-red: #f8333cff;
     --icterine: #fffd82ff;
     --ultra-pink: #f26df9ff;
+    --offwhite: #f1f1f1;
 }
 
 /*  ----------------------------------------------------------------------- Reset CSS */
@@ -48,6 +52,10 @@ aside {
     width: 100%;
 }
 
+.d-none {
+    display: none;
+}
+
 /* ----------------------------------------------------------------------- margin only */
 
 .m-2 {
@@ -59,9 +67,18 @@ aside {
     margin-right: 1rem;
 }
 
+.my-2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .my-5 {
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.mt-1 {
+    margin-top: 0.5rem;
 }
 
 .mt-2 {
@@ -83,6 +100,7 @@ aside {
 .ml-2 {
     margin-left: 1rem;
 }
+
 /* ----------------------------------------------------------------------- padding only */
 .p-2 {
     padding: 1rem;
@@ -107,6 +125,16 @@ aside {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.px-4 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.pt-3 {
+    padding-top: 1.5rem;
+}
+
 .pb-5 {
     padding-bottom: 3rem;
 }
@@ -114,11 +142,15 @@ aside {
 .pb-4 {
     padding-bottom: 2.5rem;
 }
+
 .pl-2 {
     padding-left: 1rem;
 }
 
 /*  ----------------------------------------------------------------------- text only */
+.text-italic {
+    font-style: italic;
+}
 .text-center {
     text-align: center;
 }
@@ -143,18 +175,74 @@ aside {
     color: var(--ultra-pink);
 }
 
+/* ------------------------------------------------------------------------ Form Input only */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    background-color: var(--offwhite);
+    border: 0;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+
+}
+
+/* ----------------------------------------------------------------------- form only */
+.form-group {
+    margin-bottom: 1rem;
+}
+
 /*  ----------------------------------------------------------------------- font only */
 .fw-bold {
     font-weight: 700;
+}
+
+.fw-light {
+    font-weight: 300;
 }
 
 .fs-3 {
     font-size: 1.5rem;
 }
 
+.fs-4 {
+    font-size: 1.25rem;
+}
+.fs-5 {
+    font-size: 1.125rem;
+}
+
 /* ----------------------------------------------------------------------- background only */
 .bg-grey {
     background-color: var(--black-6);
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-blue {
+    background-color: var(--blue-dark);
+}
+
+.bg-blue-mix {
+    /* https: //cssgradient.io/ */
+    background: rgb(17, 17, 17);
+    background: -moz-linear-gradient(360deg, rgba(17, 17, 17, 1) 8%, rgba(29, 125, 191, 1) 60%, rgba(42, 162, 225, 1) 90%);
+    background: -webkit-linear-gradient(360deg, rgba(17, 17, 17, 1) 8%, rgba(29, 125, 191, 1) 60%, rgba(42, 162, 225, 1) 90%);
+    background: linear-gradient(360deg, rgba(17, 17, 17, 1) 8%, rgba(29, 125, 191, 1) 60%, rgba(42, 162, 225, 1) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111", endColorstr="#2aa2e1", GradientType=1);
+}
+
+.shadow {
+box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.shadow-hover:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.05);
+    transition: all 0.25s ease-in-out;
 }
 
 /* ----------------------------------------------------------------------- position only */
@@ -181,9 +269,11 @@ aside {
 }
 
 .btn-primary {
-    background-color: var(--ultra-pink);
-    padding: 0.25rem 0.5rem;
-        transition: all 0.25s ease-in-out;
+    background-color: var(--blue-dark);
+    color: #fff;
+    font-weight: 400;;
+    padding: 0.5rem 1rem;
+    transition: all 0.25s ease-in-out;
 }
 
 .btn-primary:hover {
@@ -198,10 +288,19 @@ aside {
     min-height: 50vh;
 }
 
+section {
+    min-height: 30vh;
+}
+
+.section-content {
+    min-height: 30vh;
+}
+
 .article-img {
     width: 100%;
     height: 100%;
 }
+
 .title-text {
     font-size: 3.5rem;
     font-weight: 700;
@@ -212,6 +311,38 @@ aside {
     background-color: white;
     max-width: 500px;
 }
+
+.float-end {
+    float: right;
+}
+
+.section-separator {
+    background: url(/assets/images/general/pexels-niezam-16516.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    flex-shrink: 0;
+    height: 100%;
+    min-height: 30vh;
+}
+
+.video-player-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video-player {
+    border: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.breadcrumb {
+    color:var(--blue);
+    font-weight: 300;
+}
+
 @media screen and (min-width: 768px) {
     .d-none-md {
         display: none;

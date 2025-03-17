@@ -3,31 +3,47 @@ layout: layouts/frame.njk
 ---
 
 {% set articles = [
-{"title": "test","description": "Test","date": "2025","url": "test" },
-{"title": "test 2", "description": "Another test", "date": "2026", "url": "test2"},
-{"title": "test", "description": "Test", "date": "2025", "url": "test" },
-{"title": "test 2", "description": "Another test", "date": "2026", "url": "test2"},
-{"title": "test", "description": "Test", "date": "2025", "url": "test" },
-{"title": "test 2", "description": "Another test", "date": "2026", "url": "test2"}
+{
+"title": "Putin says he has no money left and needs sanctions lifted to keep invading",
+"date": "2025",
+"url": "latest-news/putin-says-he-has-no-money-left-and-needs-sanctions-lifted",
+"imgSrc":"/assets/images/news/putin-2.webp"
+},
+{
+"title": "UK Prime minister knows why Putin Invaded Ukraine",
+"date": "2026",
+"url": "/latest-news/uk-prime-minister-knows-why-putin-invaded-ukraine",
+"imgSrc":"/assets/images/news/uk-prime-minister.webp"
+},{
+"title": "Putin says UK should mind it's own business",
+"date": "2025",
+"url": "latest-news/putin-says-uk-should-mind-its-own-business",
+"imgSrc":"/assets/images/news/Putin.jpg"
+}
 ] %}
 
-<main>
-    <h1 class="title-text my-5">TOP STORIES</h1>
-    <div class="row main-content">
-        <div class="col-sm-12 col-md-8 col-lg-9 position-relative">
-            {% include "components/big-news-card.njk" %}
+<main class="container fluid">
+    <div class="container">
+        <h1 class="title-text my-5">TOP STORIES</h1>
+        <div class="row main-content">
+            <div class="col-sm-12 col-md-8 col-lg-9 position-relative">
+                {% include "components/big-news-card.njk" %}
 
-            <section class="row m-2">
-                {% import "templates/article.njk" as articleTemplate %}
-                {% for article in articles %}
-                {{ articleTemplate.field(article.title, article.description, article.date, article.url)
-                }}
-                {% endfor %}
-            </section>
-        </div>
+                <section class="row m-2 gap-2">
+                    {% import "templates/article.njk" as articleTemplate %}
+                    {% for article in articles %}
+                    {{ articleTemplate.field(article.title, article.description, article.date, article.url,
+                    article.imgSrc)
+                    }}
+                    {% endfor %}
+                </section>
+            </div>
 
-        <div class="col-sm-12 col-md-4 col-lg-3">
-            {% include "templates/aside.njk" %}
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                {% include "templates/aside.njk" %}
+            </div>
         </div>
     </div>
+    {% include "components/alien-conspiracy-coming-soon.njk" %}
+    {% include "components/recommended-music.njk" %}
 </main>

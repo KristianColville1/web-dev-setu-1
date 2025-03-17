@@ -1,0 +1,38 @@
+{% set musicArticles = [
+{
+"title": "Oliver Anthony",
+"description": "Rich Men North Of Richmond",
+"url": "/entertainment-and-arts/oliver-anthony-rich-men-north-of-richmond",
+"imgSrc": "/assets/images/entertainment/oliver-anthony-rich-men.jpg"
+},{
+"title": "Zach Bryan",
+"url": "/entertainment-and-arts/zach-bryan-something-in-the-orange",
+"description": "Something In The Orange",
+"imgSrc": "/assets/images/entertainment/zach-bryan-something-in-the-orange.jpg"
+},{
+"title": "Lykke Li",
+"url": "/entertainment-and-arts/lykke-li-i-follow-rivers",
+"description": "I Follow Rivers",
+"imgSrc": "/assets/images/entertainment/Lykke-Li-i-follow-rivers.jpg"
+},{
+"title": "Mark Ambor",
+"url": "/entertainment-and-arts/mark-ambor-belong-together",
+"description": "Belong Together",
+"imgSrc": "/assets/images/entertainment/Mark-Ambor-belong-together.jpg"
+}
+] %}
+
+
+<section class="w-100 bg-blue-mix">
+    <div class="container container section-content mb-5">
+        <div class="row my-5 mx-2">
+            <div class="col-12 w-100">
+                <h2>Recommended Music</h2>
+            </div>
+            {% import "templates/article.njk" as musicTemplate %}
+            {% for article in musicArticles %}
+                {{ musicTemplate.field(article.title, article.description, article.date, article.url, article.imgSrc) }}
+            {% endfor %}
+        </div>
+    </div>
+</section>

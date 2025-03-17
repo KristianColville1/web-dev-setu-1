@@ -1,0 +1,28 @@
+{% macro render(paths, video_url, info) %}
+<div class="container fluid">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12">
+                {% import "components/breadcrumb-path.njk" as breadcrumb %}
+                {{ breadcrumb.field(paths) }}
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                <div class="content-wrapper position-relative m-2">
+                    {% import "components/video-player.njk" as videoPlayer %}
+                    {{ videoPlayer.field(video_url) }}
+                </div>
+                <div class="row m-2" >
+                    <div class="col-12">
+                        {{info}}
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                {% include "templates/aside.njk" %}
+            </div>
+        </div>
+    </div>
+    {% include "components/recommended-music.njk" %}
+</div>
+{% endmacro %}

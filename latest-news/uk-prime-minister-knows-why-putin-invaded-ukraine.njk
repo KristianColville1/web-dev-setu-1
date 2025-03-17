@@ -1,0 +1,31 @@
+---
+layout: layouts/frame.njk
+---
+
+{% set paths = [
+{"title": "Latest News", "url": "/latest-news"},
+{"title": "UK Stating the Obvious", "url": "/uk-prime-minister-knows-why-putin-invaded-ukraine"}
+]
+%}
+
+{% set image = "/assets/images/news/uk-prime-minister.webp" %}
+
+{% set info =
+{"heading": "UK Stating the Obvious", "text": "UK Prime Minister Keir Starmer has made a groundbreaking discovery. He has
+figured out why Putin invaded Ukraine. The UK Prime Minister has stated that Putin invaded Ukraine because he wanted to
+take control of the country. This is a shocking revelation that has left many people in disbelief. The UK Prime Minister
+has called on the international community to take action against Putin and stop the war in Ukraine.
+"}
+%}
+
+{% set satire = [
+{"author": "Jim McNugget", "heading": "Let's Find Out From Jim", "text": "UK really stating the obvious here."
+},
+{"author": "Jim McNugget", "heading": "Wow, what a conclusion", "text": "The people of Ukraine, after years of missile
+dodging and infrastructure bingo, have apparently decided they're a little
+bit over it. Reports indicate that they now prefer peace over constant war - an absolutely groundbreaking revelation."},
+{"author": "Jim McNugget", "heading": "The world is watching", "text": "Most people are tired of the war in Ukraine and
+want the price the fuel of to come down. Putin is preventing the price of fuel to coming down."}
+]%}
+{% import "templates/news-page.njk" as pageLayout %}
+{{ pageLayout.render(paths, image, info, satire) }}

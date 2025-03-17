@@ -1,0 +1,11 @@
+---
+layout: layouts/frame.njk
+---
+
+{% set paths = [
+{"title": "Entertainment and Arts", "url": "/entertainment-and-arts"},
+{"title": "Lykke Li", "url": "/entertainment-and-arts/lykke-li-i-follow-rivers"}
+] %}
+
+{% import "templates/video-page.njk" as pageLayout %}
+{{ pageLayout.render(paths, "https://www.youtube.com/embed/K3JGxj2rvAs?si=tBPaHgJ5eBhq43Tw") }}

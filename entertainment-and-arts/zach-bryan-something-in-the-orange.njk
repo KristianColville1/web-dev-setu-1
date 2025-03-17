@@ -1,0 +1,11 @@
+---
+layout: layouts/frame.njk
+---
+
+{% set paths = [
+{"title": "Entertainment and Arts", "url": "/entertainment-and-arts"},
+{"title": "Zach Bryan", "url": "/entertainment-and-arts/zach-bryan-something-in-the-orange"}
+] %}
+
+{% import "templates/video-page.njk" as pageLayout %}
+{{ pageLayout.render(paths, "https://www.youtube.com/embed/lA8F9sIhGdg?si=OqL_imJ7mGXPF1Cn") }}

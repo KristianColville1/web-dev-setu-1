@@ -1,0 +1,35 @@
+---
+layout: layouts/frame.njk
+---
+
+{% set paths = [
+{"title": "Latest News", "url": "/latest-news"},
+{"title": "Adults Not Happy", "url": "/how-to-save-money-and-have-fun-as-an-adult" }
+]
+%}
+
+{% set image = "/assets/images/news/adult-health-meme.jpg" %}
+
+{% set info =
+{"heading": "Adults Just want to have Fun", "text": "Adults around the globe are tired, stressed and broke. But there is
+a solution.
+Adults can save money and have fun at the same time."
+}
+%}
+
+{% set satire = [
+{"author": "Jim McNugget", "heading": "Let's Find Out From Jim", "text": "You have to set small goals and work towards
+them." },
+{"author": "Jim McNugget",
+"heading": "Advice for Adults",
+"text": "You need to start small and work your way up. You can't expect to have it all at once. Whether thats saving
+money, going on a holiday or buying a new car. You need to set small goals and work towards them. Rome wasn't built in a
+day."
+},
+{"author": "Jim McNugget", "heading": "Conclusion", "text": "Adults should be more concerned about the price
+of fuel."},
+{"author": "Jim McNugget", "heading": "The world is watching", "text": "Price of fuel won't be coming down anytime
+soon."}
+]%}
+{% import "templates/news-page.njk" as pageLayout %}
+{{ pageLayout.render(paths, image, info, satire) }}

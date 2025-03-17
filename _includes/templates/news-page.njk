@@ -1,0 +1,38 @@
+{% macro render(paths, image, info, satire) %}
+<div class="container fluid">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12">
+                {% import "components/breadcrumb-path.njk" as breadcrumb %}
+                {{ breadcrumb.field(paths) }}
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                <div class="content-wrapper m-2">
+                    <h1>{{info.heading}}</h1>
+                    <img src="{{image}}" alt="{{info.alt}}" class="w-100 mb-2">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-9">
+                    <p class="fs-4 text-justify">{{info.text}}</p>
+                    <div class="satire my-2">
+                        
+                        {% for part in satire %}
+                        <h2 class="text-justify mt-5">{{part.heading}}</h2>
+                        <hr class="text-white">
+                        <p class="fs-4 text-justify">{{part.text}}</p>
+                        <p class="text-light my-2 text-italic">- {{part.author}}</p>
+                        {% endfor %}
+                    </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                {% include "templates/aside.njk" %}
+            </div>
+        </div>
+    </div>
+    {% include "components/alien-conspiracy-coming-soon.njk" %}
+    {% include "components/recommended-music.njk" %}
+</div>
+{% endmacro %}

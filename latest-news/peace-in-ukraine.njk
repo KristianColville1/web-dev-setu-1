@@ -1,6 +1,31 @@
 ---
 layout: layouts/frame.njk
 ---
-<main>
-    
-</main>
+
+{% set paths = [
+{"title": "Latest News", "url": "/latest-news"},
+{"title": "Peace in Ukraine", "url": "/peace-in-ukraine"}
+]
+%}
+
+{% set image = "/assets/images/news/main-article.jpg" %}
+
+{% set info =
+{"heading": "Peace in Ukraine", "text": "The war in Ukraine has been going on for years now, and it seems like there is
+no end in sight. But there is hope. The people of Ukraine are tired of the fighting and want peace. They are calling on
+the international community to help them find a solution to the conflict. The world is watching, and the people of
+Ukraine are hoping for a peaceful resolution to the war."}
+%}
+
+{% set satire = [
+{"author": "Jim McNugget", "heading": "Let's Find Out From Jim", "text": "Price of fuel won't be coming down anytime
+soon. "
+},
+{"author": "Jim McNugget", "heading": "Absolute Disaster", "text": "The people of Ukraine, after years of missile
+dodging and infrastructure bingo, have apparently decided they're a little
+bit over it. Reports indicate that they now prefer peace over constant war - an absolutely groundbreaking revelation."},
+{"author": "Jim McNugget", "heading": "The world is watching", "text": "Most people are tired of the war in Ukraine and
+want the price the fuel of to come down. Putin is preventing the price of fuel coming down."}
+]%}
+{% import "templates/news-page.njk" as pageLayout %}
+{{ pageLayout.render(paths, image, info, satire) }}

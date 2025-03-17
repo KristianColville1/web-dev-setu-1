@@ -14,3 +14,6 @@ bugs:
 offsetting grid columns
 
 fix: defining the end of the flex grid column
+
+background gradient:
+https://cssgradient.io/

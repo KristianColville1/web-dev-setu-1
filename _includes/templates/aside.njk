@@ -1,13 +1,23 @@
 {% set articles = [
-{"title": "test","description": "Test","date": "2025","url": "test" },
-{"title": "test 2", "description": "Another test", "date": "2026", "url": "test2"},
-{"title": "test", "description": "Test", "date": "2025", "url": "test" }
+{
+"title": "Aliens demand justice for car crash victims",
+"date": "15 hours ago",
+"url": "latest-news/aliens-demand-justice-for-car-crash-victims",
+"imgSrc":"/assets/images/news/aliens-in-car.jpg"
+},
+{
+"title": "How to save money and have fun as an adult",
+"date": "yesterday",
+"url": "/latest-news/how-to-save-money-and-have-fun-as-an-adult",
+"imgSrc":"/assets/images/news/adult-health-meme.jpg"
+}
 ] %}
 
 <aside class="m-2">
+    {% include "components/adverteasement.njk"%}
     {% import "templates/article.njk" as articleTemplate %}
     {% for article in articles %}
-    {{ articleTemplate.field(article.title, article.description, article.date, article.url)
+    {{ articleTemplate.field(article.title, article.description, article.date, article.url, article.imgSrc)
     }}
     {% endfor %}
 </aside>

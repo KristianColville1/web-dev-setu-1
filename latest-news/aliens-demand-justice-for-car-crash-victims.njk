@@ -1,0 +1,27 @@
+---
+layout: layouts/frame.njk
+---
+
+{% set paths = [
+{"title": "Latest News", "url": "/latest-news"},
+{"title": "Aliens Not Happy", "url": "/aliens-demand-justice-for-car-crash-victims"}
+]
+%}
+
+{% set image = "/assets/images/news/aliens-in-car.jpg" %}
+
+{% set info =
+{"heading": "Aliens Not Happy", "text": "Aliens have been watching us for thousands of years and asking themselves,
+'Why are humans so stupid?' But now they're asking a different question: 'Why are humans so reckless?' The aliens are
+demanding justice for the victims of a recent car crash, and they're not going to stop until they get it."
+}
+%}
+
+{% set satire = [
+{"author": "Jim McNugget", "heading": "Let's Find Out From Jim", "text": "This is frightening news."
+},
+{"author": "Jim McNugget", "heading": "Wow, what a conclusion", "text": "Aliens should be more concerned about the price of fuel."},
+{"author": "Jim McNugget", "heading": "The world is watching", "text": "Price of fuel won't be coming down anytime soon."}
+]%}
+{% import "templates/news-page.njk" as pageLayout %}
+{{ pageLayout.render(paths, image, info, satire) }}

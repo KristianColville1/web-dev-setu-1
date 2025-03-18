@@ -12,9 +12,13 @@ Developer: Kristian Colville
 * [User Experience (UX)](#user-experience-ux)
     * [Target Audience](#target-audience)
 * [Design](#design)
+    * [Color Scheme](#color-scheme)
+    * [Typography](#typography)
 * [Technologies & Tools](#technologies--tools)
 * [Languages Used](#languages-used)
 * [Features](#features)
+    * [Pages](#pages)
+    * [Core Components](#core-components)
 * [Data](#data)
 * [Testing](#testing)
 * [Bugs](#bugs)
@@ -50,27 +54,49 @@ My goal with the project was to test myself with the limitations given in the de
 
 ## Design
 
-### Colors
+### Color Scheme
+
+The color scheme for this project was inspired by Sky News. The primary colors used include deep black (#252525), a vibrant blue (#2aa2e1), and an even darker black (#111). These colors were directly sourced from Sky News to maintain a similar visual identity.
+
+Using the darker black taken from Sky News, a complementary palette was taken from Coolors to enhance contrast and vibrancy.
+
+The extended selection includes:
+- Jade Green (#44af69),
+- Imperial Red (#f8333c),
+- Icterine Yellow (#fffd82),
+- Ultra Pink (#f26df9).
+
+![Coolors Palette](/documentation/assets/imgs/palette.png)
+
+These colors were chosen to add energy and visual interest while maintaining a professional aesthetic.
+
+The decision to incorporate blue was influenced by its common use in news and social media platforms, symbolizing trust, reliability, and strength qualities essential for a news-oriented website. The additional colors were selected to create contrast and draw attention to key elements to ensure a dynamic and engaging user experience on *The Daily Satire*.
+
+### Typography
 
 
+### Structure
 
-### Fonts
 
 ## Technologies & Tools
 
-- [CSS3 Language](https://www.geeksforgeeks.org/difference-between-css-and-css3/) was the version of CSS used to develop project.
-- [CSS Background Gradient](https://cssgradient.io/) was used to make a gradient wash effect for a background using CSS3
-- [CSS Box Shadow](https://getcssscan.com/css-box-shadow-examples) used to create the box shadow effect on many of article elements in the project.
-- [HTML5 Language](https://en.wikipedia.org/wiki/HTML5) is the system used to structure and present the website content.
-- [Stack Overflow](https://stackoverflow.com) used to query similar problems I encountered with CSS and flex grid.
-- [NunJucks](https://mozilla.github.io/nunjucks/) was used to build the templating system for the project for ease of development.
-- [Eleventy](https://www.11ty.dev/) was to build a static site turning the project code into production ready version on file changes.
-- [NodeJs](https://nodejs.org/en) was used to run the static site generator Eleventy
-- [Website Mockup Generator](https://websitemockupgenerator.com/) was used to create the mockup image at the top of this README.
-- [Terms Feed Generator](https://www.termsfeed.com/) - Allowed me to create a privacy policy and terms & conditions pages for the website.
-- [Pexels](https://www.pexels.com/) - Many of the images were taken from this copyright free domain.
-- [Google Images](https://images.google.com/) - Many of the news images came from here.
-- [YouTube](https://www.youtube.com) - Allowed me to embed multiple videos onto the website for viewing.
+- [Coolors](https://coolors.co/) - Used to create a color palette
+- [CSS Background Gradient](https://cssgradient.io/) was used to make a gradient wash effect for a background using CSS3.  
+- [CSS Box Shadow](https://getcssscan.com/css-box-shadow-examples) was used to create the box shadow effect on many of the article elements in the project.  
+- [CSS3 Language](https://www.geeksforgeeks.org/difference-between-css-and-css3/) was the version of CSS used to develop the project.  
+- [Eleventy](https://www.11ty.dev/) was used to build a static site, turning the project code into a production-ready version on file changes.  
+- [Google Fonts](https://fonts.google.com/) helped to find the Roboto font for styling.  
+- [Google Images](https://images.google.com/) provided many of the news images used.  
+- [HTML5 Language](https://en.wikipedia.org/wiki/HTML5) is the system used to structure and present the website content.  
+- [NameCheap](https://ap.www.namecheap.com/) was used to create the logo for *The Daily Satire*.  
+- [NodeJs](https://nodejs.org/en) was used to run the static site generator, Eleventy.  
+- [NunJucks](https://mozilla.github.io/nunjucks/) was used to build the templating system for the project for ease of development.  
+- [Pexels](https://www.pexels.com/) provided many of the images from this copyright-free domain.  
+- [Stack Overflow](https://stackoverflow.com) was used to query similar problems encountered with CSS and flex grid.  
+- [Terms Feed Generator](https://www.termsfeed.com/) allowed the creation of a privacy policy and terms & conditions pages for the website.  
+- [Website Mockup Generator](https://websitemockupgenerator.com/) was used to create the mockup image at the top of this README.  
+- [YouTube](https://www.youtube.com) allowed embedding multiple videos onto the website for viewing.  
+
 
 ## Languages Used
 
@@ -81,6 +107,92 @@ As part of the requirements only two languages were used in the development of t
 
 
 ## Features
+
+*The Daily Satire* has 18 web pages that people can browse and many distinctive features.
+
+### Pages
+
+- [Home](https://polite-mochi-17c03a.netlify.app/)
+- [About](https://polite-mochi-17c03a.netlify.app/about)
+- [Entertainment & Arts](https://polite-mochi-17c03a.netlify.app/entertainment-and-arts)
+- [Latest news](https://polite-mochi-17c03a.netlify.app/latest-news)
+- [Contact](https://polite-mochi-17c03a.netlify.app/contact)
+- [News Page 1: Peace In Ukraine](https://polite-mochi-17c03a.netlify.app/latest-news/peace-in-ukraine)
+- [News Page 2: Putin Says He Has No Money Left And Needs Sanctions Lifted To Keep Invading](https://polite-mochi-17c03a.netlify.app/latest-news/putin-says-he-has-no-money-left-and-needs-sanctions-lifted/)
+- [News Page 3: UK Prime Minister Knows Why Putin Invaded Ukraine](https://polite-mochi-17c03a.netlify.app/latest-news/uk-prime-minister-knows-why-putin-invaded-ukraine/)
+- [News Page 4: Putin Says UK Should Mind It's Own Business](https://polite-mochi-17c03a.netlify.app/latest-news/putin-says-uk-should-mind-its-own-business/)
+- [News Page 5: Aliens Demand Justice For Car Crash Victims](https://polite-mochi-17c03a.netlify.app/latest-news/aliens-demand-justice-for-car-crash-victims/)
+- [News Page 6: How To Save Money And Have Fun As An Adult](https://polite-mochi-17c03a.netlify.app/latest-news/how-to-save-money-and-have-fun-as-an-adult/)
+- [News Page 7: Cheap Viagra Goes Terribly Wrong](https://polite-mochi-17c03a.netlify.app/latest-news/cheap-viagra-goes-terribly-wrong/)
+- [Entertainment Page 1: Oliver Anthony - Rich Men North Of Richmond](https://polite-mochi-17c03a.netlify.app/entertainment-and-arts/oliver-anthony-rich-men-north-of-richmond/)
+- [Entertainment Page 2: Zach Bryan - Something In The Orange](https://polite-mochi-17c03a.netlify.app/entertainment-and-arts/zach-bryan-something-in-the-orange/)
+- [Entertainment Page 3; Lykke Li - I Follow Rivers](https://polite-mochi-17c03a.netlify.app/entertainment-and-arts/lykke-li-i-follow-rivers/)
+- [Entertainment Page 4: Mark Ambor - Belong Together](https://polite-mochi-17c03a.netlify.app/entertainment-and-arts/mark-ambor-belong-together/)
+- [Legal Page1: Terms and Conditions](https://polite-mochi-17c03a.netlify.app/legal/terms-and-conditions/)
+- [Legal Page2: Privacy Policy](https://polite-mochi-17c03a.netlify.app/legal/privacy-policy/)
+
+
+### Core Components
+
+#### Breadcrumb paths
+![Breadcrumb](/documentation/assets/imgs/breadcrumb.png)
+
+**Breadcrumb Paths** - As part of my independent learning, I built a simple breadcrumb component using NunJucks. This component is implemented on the news and entertainment pages and could be expanded in future iterations with JavaScript to enable multi-level traversal on subcategory pages.
+
+While my current approach works, I acknowledge that using JavaScript could provide a more efficient, modular, and reusable solution. Future improvements may focus on simplifying the implementation and enhancing functionality.
+
+#### Navigation System
+
+![Navigation System 1](/documentation/assets/imgs/nav-system-1.png)
+
+The navigation system was designed with the intent of making it as easy as possible to traverse the website.
+THe current page is scaled slightly larger with a bottom blue border to indicate the current page.
+
+Using NunJucks template logic I was able to modify the nav-items template to add 'active' class.
+
+```
+<li class="nav-item {{'active' if page.url == '/' }}"><a href="/" aria-label="link to home page">Home</a></li>
+<li class="nav-item {{'active' if '/about' in page.url }}"><a href="/about" aria-label="link to about us page">About</a></li>
+<li class="nav-item {{'active' if '/entertainment-and-arts' in page.url }}"><a href="/entertainment-and-arts" aria-label="link to entertainment and arts page">Ent & Arts</a></li>
+<li class="nav-item {{'active' if '/latest-news' in page.url }}"><a href="/latest-news"
+        aria-label="link to latest news page">Latest News</a></li>
+<li class="nav-item {{'active' if '/contact' in page.url }}"><a href="/contact"
+        aria-label="link to contact page">Contact</a></li>
+```
+
+On smaller screens the navigation system show cases the hamburger menu animation and collapse functionality, implemented using only HTML and CSS.
+
+Before
+
+![Navigation System 2](/documentation/assets/imgs/nav-system-2.png)
+
+After
+
+![Navigation System 3](/documentation/assets/imgs/nav-system-3.png)
+
+
+
+#### Container System
+
+With time and effort the entire website was structured using Flexbox and CSS Grid. Inspiration for naming conventions and column sizing was taken from Bootstrap but the container system was built entirely from scratch through trial and error.
+
+Container System:
+
+![Container System](/documentation/assets/imgs/container-system.png)
+
+I intentionally designed the container class to utilise Flexbox. It allowed for efficient spacing and content wrapping across web pages. Grid was used within the row class to position elements inside the containers. Additionally, I created helper classes such as justify-content-center to promote code reuse and maintain consistency.
+
+Common breakpoints were set using min-width for a mobile-first approach. Through this project, I re-learned and solidified my understanding of the differences between min-width and max-width. Initially, the layout was broken and visually unappealing, but with research and testing, I determined that min-width was the appropriate media query for column responsiveness. The defined breakpoints are 1024px, 767px, and 300px.
+
+The grid system utilises a 12 column layout with a minimal gap of 0.5rem.
+
+Grid System:
+
+![Grid System](/documentation/assets/imgs/grid-system.png)
+
+#### Inline Styling
+The articles for news and entertainment were modified using nunjucks to cover the images over part of the containers holding them.
+
 ## Data
 ## Testing
 ## Bugs

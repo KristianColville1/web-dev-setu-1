@@ -17,3 +17,5 @@ fix: defining the end of the flex grid column
 
 background gradient:
 https://cssgradient.io/
+
+terms and condiitons & privacy policy generator: https://app.termsfeed.com/

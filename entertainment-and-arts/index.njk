@@ -35,20 +35,19 @@ layout: layouts/frame.njk
             {% import "components/video-player.njk" as videoPlayer %}
             {{ videoPlayer.field("https://www.youtube.com/embed/PS8dNzRhMgk?si=7ThTIn3MvdUpkmSC") }}
 
-                    <div class="col-12">
-                        <h2 class="title-text m-2">Music</h2>
-                    </div>
-                    <div class="col-sm-12 col-md-8 col-lg-9">
-                        <div class="row">
-                            {% import "templates/article.njk" as articleTemplate %}
-                            {% for article in articles %}
-                            {{ articleTemplate.field(article.title, article.description, article.date, article.url, article.imgSrc)
-                            }}
-                            {% endfor %}
-                        </div>
-                    
-                    
-                    </div>
+            <div class="col-12">
+                <h2 class="title-text m-2">Music</h2>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                <div class="row">
+                    {% import "templates/article.njk" as articleTemplate %}
+                    {% for article in articles %}
+                    {{ articleTemplate.field(article.title, article.description, article.date, article.url,
+                    article.imgSrc, "col-sm-12, col-md-6")
+                    }}
+                    {% endfor %}
+                </div>
+            </div>
         </div>
 
 

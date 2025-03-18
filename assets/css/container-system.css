@@ -118,6 +118,9 @@ desktop width: 1024px
         grid-column: span 4;
     }
 
+    .col-md-3 {
+        grid-column: span 3;
+    }
     .offset-md-6 {
         grid-column-start: 7;
         grid-column-end: 13;

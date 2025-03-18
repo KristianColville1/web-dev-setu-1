@@ -33,7 +33,7 @@ layout: layouts/frame.njk
                     {% import "templates/article.njk" as articleTemplate %}
                     {% for article in articles %}
                     {{ articleTemplate.field(article.title, article.description, article.date, article.url,
-                    article.imgSrc)
+                    article.imgSrc, "col-sm-12 col-md-4")
                     }}
                     {% endfor %}
                 </section>

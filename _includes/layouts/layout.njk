@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Daily Satire is a news website that provides the latest news and updates on politics, entertainment, sports, and more.">
+    <meta name="description"
+        content="The Daily Satire is a news website that provides the latest news and updates on politics, entertainment, sports, and more.">
+    <meta name="keywords" content="news, politics, entertainment, sports, satire">
+    <meta name="author" content="Kristian Colville">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/container-system.css">
     <link rel="stylesheet" href="/assets/css/nav.css">
@@ -25,8 +31,10 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>The Daily Satire</title>
 </head>
+
 <body>
     {{ content | safe }}
     {% include "templates/footer.njk" %}
 </body>
+
 </html>

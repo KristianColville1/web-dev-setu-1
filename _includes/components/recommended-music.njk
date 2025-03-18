@@ -31,7 +31,7 @@
             </div>
             {% import "templates/article.njk" as musicTemplate %}
             {% for article in musicArticles %}
-                {{ musicTemplate.field(article.title, article.description, article.date, article.url, article.imgSrc) }}
+            {{ musicTemplate.field(article.title, article.description, article.date, article.url, article.imgSrc, "col-sm-12 col-md-3") }}
             {% endfor %}
         </div>
     </div>

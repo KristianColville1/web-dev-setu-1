@@ -40,7 +40,7 @@ https: //getbootstrap.com/docs/4.0/layout/grid/
     display: grid;
     flex: 1 1 100%;
     gap: 0.5rem;
-    grid-template-rows: auto;;
+    grid-template-rows: auto;
     grid-template-columns: repeat(12, 1fr);
     grid-area: auto;
 }
@@ -52,6 +52,7 @@ https: //getbootstrap.com/docs/4.0/layout/grid/
 .gap-2 {
     gap: 1rem;
 }
+
 /*---------------------------------------------------------Column Only */
 .col-12 {
     grid-column: span 12;
@@ -92,12 +93,13 @@ desktop width: 1024px
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
 
     /* Tablet */
     .col-md-9 {
         grid-column: span 9;
     }
+
     .col-md-8 {
         grid-column: span 8;
     }
@@ -121,6 +123,7 @@ desktop width: 1024px
     .col-md-3 {
         grid-column: span 3;
     }
+
     .offset-md-6 {
         grid-column-start: 7;
         grid-column-end: 13;
@@ -133,6 +136,9 @@ desktop width: 1024px
 }
 
 @media screen and (min-width: 1024px) {
+    .col-lg-9 {
+        grid-column: span 9;
+    }
 
     .col-lg-6 {
         grid-column: span 6;
@@ -142,8 +148,8 @@ desktop width: 1024px
         grid-column: span 3;
     }
 
-    .col-lg-9 {
-        grid-column: span 9;
+    .col-lg-4 {
+        grid-column: span 4;
     }
 
     .offset-lg-6 {

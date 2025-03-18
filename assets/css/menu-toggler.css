@@ -64,7 +64,7 @@ sized to 60% of the original size. adapted for menu.
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .menu-toggler-icon {
         display: none;
     }

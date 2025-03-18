@@ -7,5 +7,8 @@ layout: layouts/frame.njk
 {"title": "Mark Ambor", "url": "/entertainment-and-arts/mark-ambor-belong-together"}
 ] %}
 
+{% set info = "Mark Gregory Damboragian (born December 4, 1997), known professionally as Mark Ambor, is an American singer-songwriter.
+He is best known for his 2024 single 'Belong Together' - Wikipedia" %}
+
 {% import "templates/video-page.njk" as pageLayout %}
-{{ pageLayout.render(paths, "https://www.youtube.com/embed/r0c9Q21AfLA?si=lydrKvGfBsQLQszE") }}
+{{ pageLayout.render(paths, "https://www.youtube.com/embed/r0c9Q21AfLA?si=lydrKvGfBsQLQszE", info) }}

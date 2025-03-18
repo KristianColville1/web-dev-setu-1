@@ -7,5 +7,11 @@ layout: layouts/frame.njk
 {"title": "Lykke Li", "url": "/entertainment-and-arts/lykke-li-i-follow-rivers"}
 ] %}
 
+{% set info = "Li Lykke Timotej Zachrisson (born 18 March 1986), known as Lykke Li, is a
+Swedish singer, songwriter, model and actress. Her music often blends elements of indie pop, dream pop and electronic.
+Her debut studio album, Youth Novels, was released in 2008, and has been followed by Wounded Rhymes (2011), I Never
+Learn (2014), So Sad So Sexy (2018), and Eyeye (2022). She is best known for her biggest hit single to date, 'I Follow
+Rivers'. - Wikipedia" %}
+
 {% import "templates/video-page.njk" as pageLayout %}
-{{ pageLayout.render(paths, "https://www.youtube.com/embed/K3JGxj2rvAs?si=tBPaHgJ5eBhq43Tw") }}
+{{ pageLayout.render(paths, "https://www.youtube.com/embed/K3JGxj2rvAs?si=tBPaHgJ5eBhq43Tw", info) }}

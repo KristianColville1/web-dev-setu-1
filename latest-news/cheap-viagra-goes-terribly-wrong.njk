@@ -1,0 +1,35 @@
+---
+layout: layouts/frame.njk
+---
+
+{% set paths = [
+{"title": "Latest News", "url": "/latest-news"},
+{"title": "Cheap Pills Cheap Thrills", "url": "/latest-news/cheap-viagra-goes-terribly-wrong" }
+]
+%}
+
+{% set image = "/assets/images/news/cheap-viagra.jpg" %}
+
+{% set info =
+{"heading": "Cheap Pills Cheap Thrills", "text": "Since the dawn of man, there has been a quest for the perfect pill.
+A pill capable of curing a specific ailment or enhancing a particular aspect of life. But what happens when the quest for 
+the perfect pill goes terribly wrong? What happens when the pill that was supposed to bring joy and happiness instead
+brings about chaos and destruction? This is the story of the cheap pills that went terribly wrong."
+}
+%}
+
+{% set satire = [
+{"author": "Jim McNugget", "heading": "Let's Find Out From Jim", "text": "We received multiple reports from people who have experienced the issue.
+It's a disaster."
+},
+{"author": "Jim McNugget", "heading": "A Blast from the Past", "text": "The people who took these pills are now experiencing a rare side effect.
+A blast from the past. Reports indicate that individuals that have taken these pills may experience a delayed reaction that may extend in some cases up to 5 weeks.
+The side effect is highly inconvenient and has caused a lot of distress to the individuals who have experienced the delayed reaction going about their daily needs.
+A serious event occurred in a Walmart Store where many individuals experienced the issue at the same time. Quiet disturbing to witness."},
+{"author": "Jim McNugget", "heading": "The Walmart Mishap", "text": "We received a report from a Walmart in the midwest region of the USA.
+As the pills were being sold at a discounted rate in these stores, happen chance many of the individuals who took the pills were from the same area.
+The Walmart Mishap as it has been dubbed, has caused a lot of distress to the local community and has left many individuals in a state of shock.
+Many people were going about their daily shopping needs when the incident occurred in the store. The police were called to the scene and the store was evacuated."}
+]%}
+{% import "templates/news-page.njk" as pageLayout %}
+{{ pageLayout.render(paths, image, info, satire) }}

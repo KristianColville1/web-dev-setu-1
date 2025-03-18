@@ -1,3 +1,59 @@
 ---
 layout: layouts/frame.njk
 ---
+
+{% set articles = [
+{
+"title": "Oliver Anthony",
+"description": "Rich Men North Of Richmond",
+"url": "/entertainment-and-arts/oliver-anthony-rich-men-north-of-richmond",
+"imgSrc": "/assets/images/entertainment/Oliver-Anthony-rich-men.jpg"
+},{
+"title": "Zach Bryan",
+"url": "/entertainment-and-arts/zach-bryan-something-in-the-orange",
+"description": "Something In The Orange",
+"imgSrc": "/assets/images/entertainment/zach-bryan-something-in-the-orange.jpg"
+},{
+"title": "Lykke Li",
+"url": "/entertainment-and-arts/lykke-li-i-follow-rivers",
+"description": "I Follow Rivers",
+"imgSrc": "/assets/images/entertainment/Lykke-Li-i-follow-rivers.jpg"
+},{
+"title": "Mark Ambor",
+"url": "/entertainment-and-arts/mark-ambor-belong-together",
+"description": "Belong Together",
+"imgSrc": "/assets/images/entertainment/Mark-Ambor-belong-together.jpg"
+}
+] %}
+
+<div class="container">
+    <h1 class="title-text my-5 mx-2">Entertainment and Arts</h1>
+    {% include "components/alien-conspiracy-coming-soon.njk" %}
+    <main class="row my-5">
+        <div class="col-sm-12 col-md-8 col-lg-9">
+            <h2 class="title-text mx-2 mb-2">Fun for the whole Family</h2>
+            {% import "components/video-player.njk" as videoPlayer %}
+            {{ videoPlayer.field("https://www.youtube.com/embed/PS8dNzRhMgk?si=7ThTIn3MvdUpkmSC") }}
+
+                    <div class="col-12">
+                        <h2 class="title-text m-2">Music</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-9">
+                        <div class="row">
+                            {% import "templates/article.njk" as articleTemplate %}
+                            {% for article in articles %}
+                            {{ articleTemplate.field(article.title, article.description, article.date, article.url, article.imgSrc)
+                            }}
+                            {% endfor %}
+                        </div>
+                    
+                    
+                    </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-4 col-lg-3">
+            {% include "templates/aside.njk" %}
+        </div>
+    </main>
+</div>

@@ -13,7 +13,7 @@ nav {
     padding: 0.5rem;
 }
 
-#brand-logo {
+.brand-logo {
     padding-right: 10px;
     border-right: 2rem solid var(--imperial-red);
     border-radius: 50%;

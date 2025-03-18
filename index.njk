@@ -30,6 +30,7 @@ layout: layouts/frame.njk
                 {% include "components/big-news-card.njk" %}
 
                 <section class="row m-2 gap-2">
+                    <h2 class="col-12 my-2 mx-2">Other Stories</h2>
                     {% import "templates/article.njk" as articleTemplate %}
                     {% for article in articles %}
                     {{ articleTemplate.field(article.title, article.description, article.date, article.url,

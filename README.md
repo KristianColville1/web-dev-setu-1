@@ -21,8 +21,12 @@ Developer: Kristian Colville
     * [Core Components](#core-components)
 * [Data](#data)
 * [Testing](#testing)
+    * [Google Lighthouse Results](#google-lighthouse-results)
 * [Bugs](#bugs)
 * [Development & Deployment](#development--deployment)
+    * [Version Control](#version-control)
+    * [Cloning the Repository](#cloning-this-repository)
+    * [Netlify](#netlify)
 * [Credits](#credits)
 
 ## Description
@@ -74,6 +78,8 @@ The decision to incorporate blue was influenced by its common use in news and so
 
 ### Typography
 
+
+For typography, I used [Google Fonts](https://fonts.google.com/) to select a font that would provide a clean and readable experience for users. I chose **Roboto** because of its modern sans-serif design that ensures excellent readability on both desktop and mobile devices.
 
 ### Structure
 
@@ -191,14 +197,125 @@ Grid System:
 #### Inline Styling
 The articles for news and entertainment were modified using nunjucks to cover the images over part of the containers holding them.
 
+```html
+{% macro field(title, description, date, url, imgSrc, size)%}
+<article class="{{size}} pb-4 m-2">
+    <a href="{{url}}" class="text-white text-decoration-hover">
+        <div style="width:100%;height:160px;background: url({{imgSrc}}) center center;background-size:cover"
+            class="rounded shadow-hover"></div>
+        <div class="m-2">
+            <p class="py-2 fw-light fs-5">{{title}}</p>
+            <p class="py-2 fw-light">{{description}}</p>
+            <p class="py-2">{{date}}</p>
+        </div>
+    </a>
+</article>
+{% endmacro %}
+
+```
+
 ## Data
+
+The data on the webpages is primarily embedded using NunJucks. In future versions this could be enhanced by utilising JSON, JavaScript, or a database to replace the need for embedded data.
+
+The embedded data consists of arrays, objects, and primitive values.
+
 ## Testing
-## Bugs
+
+### Google Lighthouse Results
+
+The main point of consideration are below pages. Only issue encountered was best practices score as it was affected by the google video embeds.
+
+#### Home
+![home](/documentation/assets/imgs/google-lighthouse/home.png)
+
+#### About
+![about](/documentation/assets/imgs/google-lighthouse/about.png)
+
+#### Entertainment & Arts
+![entertainment and arts](/documentation/assets/imgs/google-lighthouse/entertainment-and-arts.png)
+
+#### Latest news
+![latest news](/documentation/assets/imgs/google-lighthouse/latest-news.png)
+
+#### Contact
+![contact](/documentation/assets/imgs/google-lighthouse/contact.png)
+
+#### News Page
+![news page](/documentation/assets/imgs/google-lighthouse/news-page.png)
+
+#### Entertainment Page
+![entertainment page](/documentation/assets/imgs/google-lighthouse/entertainment.png)
+
+
+### HTML Validation
+
+Using: https://validator.w3.org/
+
+![html](/documentation/assets/imgs/validation/html.png)
+
+All pages pass with no warnings. Static site folder files were tested.
+
+
+### CSS Validation
+
+Using: https://jigsaw.w3.org/css-validator/
+
+![css](/documentation/assets/imgs/validation/css.png)
+
+All pages pass with no warning. All CSS files tested.
+
+
 ## Development & Deployment
+
+### Version Control
+
+I used [Visual Studio Code](https://code.visualstudio.com/) as a local repository and IDE & [GitHub](https://github.com/) as a remote repository.
+
+1. Firstly, I needed to create a new repository on Github [web-dev-setu-1](https://github.com/KristianColville1/web-dev-setu-1).
+2. I opened that repository on my local machine by copying the URL from that repository and cloning it from my IDE for use.
+3. Visual Studio Code opened a new workspace for me.
+4. I created files and folders to use.
+5. To push my newly created files to GitHub I used the terminal by pressing Ctrl + shift + `.
+6. A new terminal opened and then I used the below steps.
+
+    - `git add (name of the file)` *This selects the file for the commit*
+    - `git commit -m "Commit message: (i.e. Initial commit)"` *Allows the developer to assign a specific concise statement to the commit*
+    - `git push` *The final command sends the code to GitHub*
+
+### Cloning this Repository
+
+If you would like to clone this repository please follow the bellow steps.
+
+Instructions:
+
+1. Log into GitHub.  
+2. Go to the repository you wish to clone.  
+3. Click the green "Code" button.  
+4. Copy the URL provided under the HTTPS option.  
+5. Open your preferred IDE with Git installed.  
+6. Open a new terminal window in your IDE.  
+7. Enter the following command exactly: `git clone the-URL-you-copied-from-GitHub`.  
+8. Press Enter.
+
+### Netlify
+
+I used [Netlify](https://www.netlify.com/) for deploying my project.
+
+1. First, I created an account on [Netlify](https://www.netlify.com/).
+2. I then connected my GitHub repository to Netlify by clicking the "New site from Git" button on the dashboard.
+3. I selected GitHub as my provider and authorized Netlify to access my GitHub account.
+4. I chose the repository I wanted to deploy from the list of my available options.
+5. I made sure to specify the build command and publish directory. This project utilises the **_site** directory for static build.
+6. After confirming the settings, I clicked "Deploy site."
+7. Netlify then started building and deploying the project, and once finished, it provided a URL for accessing the live site.
+
+Netlify also automatically set up continuous deployment. Any new changes pushed to the repository will trigger a new deployment on Netlify.
+
+
 ## Credits
 
 - [bryanrobinson.com](https://bryanlrobinson.com/blog/using-nunjucks-if-expressions-to-create-an-active-navigation-state-in-11ty/) helped me understand how to manipulate the templating system to highlight navigation links based on the actual path of the page.
 - [Danilo06 CodePen](https://codepen.io/Danilo06/pen/PoNNvGm) - Used and edited this idea to add a css animation for the burger menu on mobile screens.
 - [Freefrontend.com](https://freefrontend.com/css-hamburger-menu-icons/) - Allowed me to find a design for hamburger menu that I liked and could utilise in the project.
 - [SkyNews](https://news.sky.com/) - I used sky news to create a modern an appealing structure/theme for The Daily Satire
-- []()

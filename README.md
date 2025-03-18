@@ -150,14 +150,12 @@ THe current page is scaled slightly larger with a bottom blue border to indicate
 
 Using NunJucks template logic I was able to modify the nav-items template to add 'active' class.
 
-```
+```html
 <li class="nav-item {{'active' if page.url == '/' }}"><a href="/" aria-label="link to home page">Home</a></li>
 <li class="nav-item {{'active' if '/about' in page.url }}"><a href="/about" aria-label="link to about us page">About</a></li>
 <li class="nav-item {{'active' if '/entertainment-and-arts' in page.url }}"><a href="/entertainment-and-arts" aria-label="link to entertainment and arts page">Ent & Arts</a></li>
-<li class="nav-item {{'active' if '/latest-news' in page.url }}"><a href="/latest-news"
-        aria-label="link to latest news page">Latest News</a></li>
-<li class="nav-item {{'active' if '/contact' in page.url }}"><a href="/contact"
-        aria-label="link to contact page">Contact</a></li>
+<li class="nav-item {{'active' if '/latest-news' in page.url }}"><a href="/latest-news" aria-label="link to latest news page">Latest News</a></li>
+<li class="nav-item {{'active' if '/contact' in page.url }}"><a href="/contact" aria-label="link to contact page">Contact</a></li>
 ```
 
 On smaller screens the navigation system show cases the hamburger menu animation and collapse functionality, implemented using only HTML and CSS.

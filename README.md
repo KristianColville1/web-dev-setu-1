@@ -214,6 +214,11 @@ The articles for news and entertainment were modified using nunjucks to cover th
 
 ```
 
+#### Responsive Design
+
+As shown at the start of the **README** the website utilises the container system I built to provide a responsive website across mobile, tablet and desktop screens.
+
+
 ## Data
 
 The data on the webpages is primarily embedded using NunJucks. In future versions this could be enhanced by utilising JSON, JavaScript, or a database to replace the need for embedded data.
